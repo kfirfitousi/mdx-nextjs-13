@@ -9,9 +9,20 @@ type MdxContentProps = {
 
 /** Place your custom MDX components here */
 const MdxComponents = {
-  /** Example: h1 colored in yellow */
+  /** h1 colored in yellow */
   h1: (props: HTMLProps<HTMLHeadingElement>) => (
     <h1 style={{ color: "#FFF676" }} {...props} />
+  ),
+  /** Card component */
+  Card: (props: HTMLProps<HTMLDivElement>) => (
+    <div
+      style={{
+        background: "#333",
+        borderRadius: "4px",
+        padding: "16px",
+      }}
+      {...props}
+    />
   ),
 };
 
