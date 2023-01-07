@@ -1,7 +1,6 @@
 "use client"; // This is required!
 
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
-import { HTMLProps } from "react";
 
 type MdxContentProps = {
   source: MDXRemoteSerializeResult;
@@ -10,11 +9,11 @@ type MdxContentProps = {
 /** Place your custom MDX components here */
 const MdxComponents = {
   /** h1 colored in yellow */
-  h1: (props: HTMLProps<HTMLHeadingElement>) => (
+  h1: (props: React.HTMLProps<HTMLHeadingElement>) => (
     <h1 style={{ color: "#FFF676" }} {...props} />
   ),
   /** Card component */
-  Card: (props: HTMLProps<HTMLDivElement>) => (
+  Card: (props: React.HTMLProps<HTMLDivElement>) => (
     <div
       style={{
         background: "#333",
