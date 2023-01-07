@@ -17,8 +17,8 @@ const MdxComponents = {
     <div
       style={{
         background: "#333",
-        borderRadius: "4px",
-        padding: "16px",
+        borderRadius: "0.25rem",
+        padding: "0.5rem 1rem",
       }}
       {...props}
     />
